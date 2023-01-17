@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online exam</title>
+</head>
+<body>
+ <u><h1 style="text-align: center;">ONLINE EXAM </h1> </u>
+ <div style="margin: 100px;">
+  <h3  style="font-size: 25px;">1)Messi plays for which nation?</h3>
+  <input type="radio" name="q1">Uruguay<br>
+  <input type="radio" name="q1" id="a">Argentina<br>
+  <input type="radio" name="q1">Brazil<br>
+  <input type="radio" name="q1">Portugal<br>
+  <h3 style="font-size: 25px;">2)FIFA world cup 2022 hosting nation is? </h3>
+  <input type="radio" name="q2" id="b">Qatar<br>
+  <input type="radio" name="q2">Russia<br>
+  <input type="radio" name="q2">Africa<br>
+  <input type="radio" name="q2">Bolivia<br>
+  <h3 style="font-size: 25px;">3)A football player with most assists in football history.</h3>
+  <input type="radio" name="q3">Ronaldo<br>
+  <input type="radio" name="q3">Maradona<br>
+  <input type="radio" name="q3" id="c">Messi<br>
+  <input type="radio" name="q3">Pele<br>
+  <h3 style="font-size: 25px;">4)Total numbers of players in a football team is?</h3>
+  <input type="radio" name="q4">8<br>
+  <input type="radio" name="q4">12<br>
+  <input type="radio" name="q4">10<br>
+  <input type="radio" name="q4" id="d">11<br>
+  <h3 style="font-size: 25px;">5)Current Champions of FIFA WORLD CUP</h3>
+  <input type="radio" name="q5" id="e">France<br>
+  <input type="radio" name="q5">Germany<br>
+  <input type="radio" name="q5">Spain<br>
+  <input type="radio" name="q5">England<br>
+  <h3 style="font-size: 25px;">After how many years do FIFA conduct world cup</h3>
+  <input type="radio" name="q6">2<br>
+  <input type="radio" name="q6" id="f">4<br>
+  <input type="radio" name="q6">5<br>
+  <input type="radio" name="q6">7<br><br>
+  <input type="button" value="submit" onclick="result()">
+</div>
+<script>
+    function result(){
+        var score=0;
+        if(document.getElementById("a").checked){
+            score++;
+          }
+        if(document.getElementById("b").checked){
+               score++;
+           } 
+        if(document.getElementById("c").checked){
+               score++;
+           }   
+        if(document.getElementById("d").checked){
+             score++;
+          }  
+        if(document.getElementById("f").checked){
+               score++;
+           }  
+        if(document.getElementById("e").checked){
+                score++;
+            } 
+        document.write("SCORE=",score);  
+          }
+</script>
+</body> 
+</html>

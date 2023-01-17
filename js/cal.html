@@ -1,0 +1,55 @@
+<html>
+<p id="p1">
+</p>
+
+<button id ="b2" onclick="fun2()">clear</button>
+<button id="b3">Change background of cal</button>
+<input type="text" name="first" size="15" id="t1"/> 
+<input type="text" name="second" size="15" id="t2"/> 
+<button id="b4">sum</button>
+<button id="b5">dif</button>
+<button id="b6">mul</button>
+<button id="b7">div</button>
+<script>
+
+document.getElementById("b3").addEventListener("click",fun3)
+document.getElementById("b4").addEventListener("click",fun4)
+document.getElementById("b5").addEventListener("click",fun5)
+document.getElementById("b6").addEventListener("click",fun6)
+document.getElementById("b7").addEventListener("click",fun7)
+
+
+
+function fun2(){
+document.getElementById("p1").innerHTML=""
+}
+function fun3(){
+document.body.style.backgroundImage="url('leocopa1.jpg')"
+document.getElementById("p1").style.color="yellow"
+}
+function fun4(){
+var text1=parseInt(document.getElementById("t1").value)
+var text2=parseInt(document.getElementById("t2").value)
+var sum=text1+text2
+document.getElementById("p1").innerHTML="sum of "+text1+" and  "+text2+" is "+sum
+}
+function fun5(){
+var text1=parseInt(document.getElementById("t1").value)
+var text2=parseInt(document.getElementById("t2").value)
+var diff=text1-text2
+document.getElementById("p1").innerHTML="difference of "+text1+" and  "+text2+" is "+diff
+}
+function fun6(){
+var text1=parseInt(document.getElementById("t1").value)
+var text2=parseInt(document.getElementById("t2").value)
+var product=text1*text2
+document.getElementById("p1").innerHTML="product of "+text1+" and  "+text2+" is "+product
+}
+function fun7(){
+var text1=parseInt(document.getElementById("t1").value)
+var text2=parseInt(document.getElementById("t2").value)
+var div=text1/text2
+document.getElementById("p1").innerHTML="quotiant "+text1+" and  "+text2+" is "+div
+}
+</script>
+

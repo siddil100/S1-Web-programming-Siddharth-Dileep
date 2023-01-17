@@ -1,0 +1,30 @@
+<html>
+<p id="p1">
+</p>
+
+
+
+<button id="b1">Change background color1</button>
+<button id="b2">Change background color2</button>
+<button id="b3">Change background color3</button>
+
+<script>
+
+document.getElementById("b1").addEventListener("click",fun1)
+document.getElementById("b2").addEventListener("click",fun2)
+document.getElementById("b3").addEventListener("click",fun3)
+
+
+function fun1(){
+document.body.style.backgroundColor='aqua';
+}
+
+function fun2(){
+document.body.style.backgroundColor="green";
+}
+
+function fun3(){
+document.body.style.backgroundColor='yellow';
+}
+</script>
+
